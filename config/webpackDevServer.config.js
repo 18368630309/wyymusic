@@ -34,7 +34,8 @@ module.exports = function (proxy, allowedHost) {
     // specified the `proxy` setting. Finally, we let you override it if you
     // really know what you're doing with a special environment variable.
     // Note: ["localhost", ".localhost"] will support subdomains - but we might
-    // want to allow setting the allowedHosts manually for more complex setups
+    // want to allow setting the allowedHosts manually for more complex setups\
+    
     allowedHosts: disableFirewall ? 'all' : [allowedHost],
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -124,4 +125,5 @@ module.exports = function (proxy, allowedHost) {
       devServer.app.use(noopServiceWorkerMiddleware(paths.publicUrlOrPath));
     },
   };
+  
 };

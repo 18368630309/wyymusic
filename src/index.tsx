@@ -7,6 +7,7 @@ import { BrowserRouter,useRoutes } from "react-router-dom";
 // debugger
 function App() {
   return useRoutes(routes)
+  
 }
 
 const root = ReactDOM.createRoot(
